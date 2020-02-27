@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-image: url(media/pink.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#watercolor_bird{
+    mix-blend-mode: multiply;
+    background-image: url(media/bird.gif);
+    background-size: 100px 100px;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    opacity: .7;
+}
+
+#watercolor_bird2{
+    mix-blend-mode: multiply;
+    background-image: url(media/bird2.gif);
+    background-size: 100px 100px;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    opacity: .5;
+}
+
+#abstract{
+    mix-blend-mode: difference;
+    background-image: url(media/abstract_bird.gif);
+    background-size: 100px 100px;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 42%;
+}
+
+#one{
+    mix-blend-mode: exclusion;
+    background-image: url(media/abstract_bird.gif);
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    height: 100px;
+}
+
+#two{
+    mix-blend-mode: exclusion;
+    background-image: url(media/abstract_bird.gif);
+    position: absolute;
+    top: 62%;
+    width: 100%;
+    height: 100px;
+}
+
+video{
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+}
+
+audio {
+    z-index: 10;
+    mix-blend-mode: lighten;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    padding-bottom: 20px;
+}
+
+#topLeaf{
+    width:30%;
+    position: fixed;
+    top: -3%;
+    right: 0;
+    z-index: 10;
+}
+
+#bottomLeaf{
+    width: 30%;
+    position: fixed;
+    bottom: -5%;
+    left: 0px;
+    z-index: 0;
+}
