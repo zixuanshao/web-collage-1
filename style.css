@@ -15,54 +15,62 @@ body{
     height: auto;
 }
 
+@keyframes appear{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 #watercolor_bird{
     mix-blend-mode: multiply;
-    background-image: url(media/bird.gif);
-    background-size: 100px 100px;
     position: absolute;
+    right: 48%;
+    top: 28%;
     width: 300px;
-    height: 100px;
+    height: auto;
     opacity: .7;
 }
 
-#watercolor_bird2{
-    mix-blend-mode: multiply;
-    background-image: url(media/bird2.gif);
-    background-size: 100px 100px;
-    position: absolute;
-    width: 300px;
-    height: 100px;
-    bottom: 0;
-    right: 0;
-    opacity: .5;
-}
-
-#abstract{
-    mix-blend-mode: difference;
-    background-image: url(media/abstract_bird.gif);
-    background-size: 100px 100px;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    top: 42%;
+#watercolor_bird{
+    animation-name: appear;
+    animation-duration: 4s;
 }
 
 #one{
-    mix-blend-mode: exclusion;
+    mix-blend-mode: darken;
     background-image: url(media/abstract_bird.gif);
+    background-size: 100px 100px;
     position: absolute;
-    top: 22%;
     width: 100%;
     height: 100px;
 }
 
-#two{
-    mix-blend-mode: exclusion;
+#abstract{
+    mix-blend-mode: darken;
     background-image: url(media/abstract_bird.gif);
+    background-size: 100px 100px;
     position: absolute;
-    top: 62%;
+    width: 100px;
+    height: 88%;
+}
+
+#abstract-two{
+    mix-blend-mode: darken;
+    background-image: url(media/abstract_bird.gif);
+    background-size: 100px 100px;
+    position: absolute;
+    width: 100px;
+    height: 88%;
+    right: 3%;
+}
+
+#two{
+    mix-blend-mode: darken;
+    background-image: url(media/abstract_bird.gif);
+    background-size: 100px 100px;
+    position: absolute;
     width: 100%;
     height: 100px;
+    top: 84.8%;
 }
 
 video{
@@ -86,18 +94,41 @@ audio {
     padding-bottom: 20px;
 }
 
-#topLeaf{
-    width:30%;
-    position: fixed;
-    top: -3%;
-    right: 0;
-    z-index: 10;
+
+@keyframes rotate{
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
 }
 
-#bottomLeaf{
-    width: 30%;
-    position: fixed;
-    bottom: -5%;
-    left: 0px;
-    z-index: 0;
+#angel{
+    mix-blend-mode: multiply;
+    position: absolute;
+    right: 13%;
+    top: 28%;
+    opacity: .7;
+}
+
+#angelimg{
+    width: 350px;
+    height: auto;
+}
+
+#angel{
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#angel2{
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 13%;
+    top: 28%;
+    opacity: .7;
+}
+
+#angel2{
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
